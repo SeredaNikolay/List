@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4169E1">
+
+    <Button
+        android:id="@+id/CompleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="Выполнить"
+        android:background="#6495ED"/>
+    <Button
+        android:id="@+id/FailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/CompleteButton"
+        android:layout_marginLeft="2dp"
+        android:text="Провалить"
+        android:background="#6495ED"/>
+    <Button
+        android:id="@+id/DatesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="Даты"
+        android:background="#6495ED"/>
+    <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@id/DatesButton"
+        android:layout_marginRight="2dp"
+        android:text="Сохранить"
+        android:background="#6495ED"/>
+
+    <TextView
+        android:id="@+id/StateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/SaveButton"
+        android:text="Состояние: выполняется"
+        android:textSize="20sp"
+        android:background="#6A5ACD"/>
+
+    <TextView
+        android:id="@+id/NameCaptionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/StateView"
+        android:text="Название:"
+        android:textSize="20sp"
+        android:background="#6A5ACD"/>
+    <EditText
+        android:id="@+id/EditName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NameCaptionView"
+        android:layout_alignRight="@+id/NameCaptionView"
+        android:layout_below="@+id/NameCaptionView"
+        android:layout_marginTop="0dp"
+        android:inputType="text"
+        android:text=""
+        android:hint="Введите название"
+        android:textSize="20sp"
+        android:background="#6495ED"/>
+
+    <TextView
+        android:id="@+id/StartCaptionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/EditName"
+        android:text="Начало выполнения задачи:"
+        android:textSize="20sp"
+        android:background="#6A5ACD"/>
+    <EditText
+        android:id="@+id/EditStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/StartCaptionView"
+        android:layout_alignRight="@+id/StartCaptionView"
+        android:layout_below="@+id/StartCaptionView"
+        android:layout_marginTop="0dp"
+        android:inputType="text"
+        android:text=""
+        android:hint="Введите начало выполнения"
+        android:textSize="20sp"
+        android:background="#6495ED"/>
+
+    <TextView
+        android:id="@+id/FinishCaptionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/EditStart"
+        android:text="Дедлайн:"
+        android:textSize="20sp"
+        android:background="#6A5ACD"/>
+    <EditText
+        android:id="@+id/EditFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/FinishCaptionView"
+        android:layout_alignRight="@+id/FinishCaptionView"
+        android:layout_below="@+id/FinishCaptionView"
+        android:layout_marginTop="0dp"
+        android:inputType="text"
+        android:text=""
+        android:hint="Введите дедлайн"
+        android:textSize="20sp"
+        android:background="#6495ED"/>
+
+    <TextView
+        android:id="@+id/ReallyFinishCaptionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/EditFinish"
+        android:text="Окончание выполнения задачи: отсутствует"
+        android:textSize="20sp"
+        android:background="#6A5ACD"/>
+
+    <TextView
+        android:id="@+id/DescriptionCaptionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/ReallyFinishCaptionView"
+        android:text="Описание"
+        android:textSize="20sp"
+        android:background="#6A5ACD"/>
+    <EditText
+        android:id="@+id/EditDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DescriptionCaptionView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:inputType="textMultiLine"
+        android:text="Описание задачи"
+        android:gravity="center"
+        android:hint="Введите описание"
+        android:textSize="20sp"
+        android:background="#6495ED"/>
+</RelativeLayout>

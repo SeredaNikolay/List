@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4169E1">
+
+    <TextView
+        android:id="@+id/DateCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Дата:"
+        android:textSize="20sp"
+        android:background="#6A5ACD"/>
+    <EditText
+        android:id="@+id/EditDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/DateCaption"
+        android:layout_alignRight="@+id/DateCaption"
+        android:layout_below="@+id/DateCaption"
+        android:layout_marginTop="0dp"
+        android:inputType="text"
+        android:text=""
+        android:hint="Введите дату"
+        android:textSize="20sp"
+        android:background="#6495ED"/>
+
+    <TextView
+        android:id="@+id/ConsumedWaterCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/EditDate"
+        android:text="Выпитая вода (мл):"
+        android:textSize="20sp"
+        android:background="#6A5ACD"/>
+    <EditText
+        android:id="@+id/EditConsumedWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ConsumedWaterCaption"
+        android:layout_alignRight="@+id/ConsumedWaterCaption"
+        android:layout_below="@+id/ConsumedWaterCaption"
+        android:layout_marginTop="0dp"
+        android:inputType="text"
+        android:text=""
+        android:hint="Введите количество выпитой воды"
+        android:textSize="20sp"
+        android:background="#6495ED"/>
+
+    <TextView
+        android:id="@+id/ConsumedKcalsCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/EditConsumedWater"
+        android:text="Количество потреблённых ккал:"
+        android:textSize="20sp"
+        android:background="#6A5ACD"/>
+    <EditText
+        android:id="@+id/EditConsumedKcals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ConsumedKcalsCaption"
+        android:layout_alignRight="@+id/ConsumedKcalsCaption"
+        android:layout_below="@+id/ConsumedKcalsCaption"
+        android:layout_marginTop="0dp"
+        android:inputType="text"
+        android:text=""
+        android:hint="Введите количество ккал"
+        android:textSize="20sp"
+        android:background="#6495ED"/>
+
+    <TextView
+        android:id="@+id/PhysActTimeCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/EditConsumedKcals"
+        android:text="Время физичекой активности:"
+        android:textSize="20sp"
+        android:background="#6A5ACD"/>
+    <EditText
+        android:id="@+id/EditPhysActTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PhysActTimeCaption"
+        android:layout_alignRight="@+id/PhysActTimeCaption"
+        android:layout_below="@+id/PhysActTimeCaption"
+        android:layout_marginTop="0dp"
+        android:inputType="text"
+        android:text=""
+        android:hint="Введите время"
+        android:textSize="20sp"
+        android:background="#6495ED"/>
+
+    <TextView
+        android:id="@+id/FreshAirTimeCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/EditPhysActTime"
+        android:text="Время пребывания на свежем воздухе:"
+        android:textSize="20sp"
+        android:background="#6A5ACD"/>
+    <EditText
+        android:id="@+id/EditFreshAirTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/FreshAirTimeCaption"
+        android:layout_alignRight="@+id/FreshAirTimeCaption"
+        android:layout_below="@+id/FreshAirTimeCaption"
+        android:layout_marginTop="0dp"
+        android:inputType="text"
+        android:text=""
+        android:hint="Введите время"
+        android:textSize="20sp"
+        android:background="#6495ED"/>
+
+    <TextView
+        android:id="@+id/SleepTimeCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/EditFreshAirTime"
+        android:text="Время сна:"
+        android:textSize="20sp"
+        android:background="#6A5ACD"/>
+    <EditText
+        android:id="@+id/EditSleepTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SleepTimeCaption"
+        android:layout_alignRight="@+id/SleepTimeCaption"
+        android:layout_below="@+id/SleepTimeCaption"
+        android:layout_marginTop="0dp"
+        android:inputType="text"
+        android:text=""
+        android:hint="Введите время"
+        android:textSize="20sp"
+        android:background="#6495ED"/>
+
+    <TextView
+        android:id="@+id/DistractionTimeCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/EditSleepTime"
+        android:text="Время отвлечений:"
+        android:textSize="20sp"
+        android:background="#6A5ACD"/>
+    <EditText
+        android:id="@+id/EditDistractionTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/DistractionTimeCaption"
+        android:layout_alignRight="@+id/DistractionTimeCaption"
+        android:layout_below="@+id/DistractionTimeCaption"
+        android:layout_marginTop="0dp"
+        android:inputType="text"
+        android:text=""
+        android:hint="Введите время"
+        android:textSize="20sp"
+        android:background="#6495ED"/>
+
+    <Button
+        android:id="@+id/RecordDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditDistractionTime"
+        android:layout_below="@+id/EditDistractionTime"
+        android:layout_marginTop="5dp"
+        android:text="Сохранить"
+        android:background="#6495ED"/>
+    <Button
+        android:id="@+id/TasksButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignRight="@+id/EditDistractionTime"
+        android:layout_below="@+id/EditDistractionTime"
+        android:layout_marginTop="5dp"
+        android:text="Задачи"
+        android:background="#6495ED"/>
+</RelativeLayout>

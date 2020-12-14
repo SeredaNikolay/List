@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4169E1">
+
+    <Button
+        android:id="@+id/SearchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Искать"
+        android:background="#6495ED"/>
+
+    <EditText
+        android:id="@+id/SearchItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/SearchButton"
+        android:layout_alignTop="@+id/SearchButton"
+        android:layout_alignBottom="@+id/SearchButton"
+        android:inputType="text"
+        android:text=""
+        android:hint="Введите название задачи"
+        android:textSize="16sp"
+        android:background="#6A5ACD"/>
+
+    <Button
+        android:id="@+id/TaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="0"
+        android:text="Задачи"
+        android:background="#6495ED"/>
+
+    <Button
+        android:id="@+id/CreateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0"
+        android:text="Создать"
+        android:background="#6495ED"/>
+
+    <Button
+        android:id="@+id/DateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_weight="0"
+        android:text="Даты"
+        android:background="#6495ED"/>
+
+    <ListView
+        android:id="@+id/ItemsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SearchButton"
+        android:layout_above="@+id/TaskButton"
+        android:background="#1E90FF">
+    </ListView>
+
+</RelativeLayout>
