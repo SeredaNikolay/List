@@ -1,5 +1,6 @@
 package com.example.alist;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -228,6 +229,9 @@ public
             Toast.makeText(this, "Сохранено", Toast.LENGTH_SHORT).show();
         }
         return isStated;
+    }
+    static void initDBHelper(Context context){
+        ATask.initDBHelper(context);
     }
     //===================================Получить===================================
     String getState(){

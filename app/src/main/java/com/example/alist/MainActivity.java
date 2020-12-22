@@ -77,8 +77,10 @@ private
         int btnID=v.getId();
         switch (btnID) {
             case R.id.SearchButton:
-                if(SearchItem.getText().toString().isEmpty())
-                    WhereStr=null;
+                if(SearchItem.getText().toString().isEmpty()) {
+                    WhereStr = null;
+                    setListType(EListType.Task, WhereStr);
+                }
                 onSearchButtonClicked();
                 break;
             case R.id.TaskButton:
@@ -138,7 +140,7 @@ private
         ItemView.setOnItemClickListener(listItemClickListener);
 
         if(ListType==null) {
-            DBHelper.setInstance(this);
+            TaskActivity.initDBHelper(this);
             ListType=EListType.Task;
             TaskIntent = new Intent(this, TaskActivity.class);
             DateIntent = new Intent(this, DateActivity.class);

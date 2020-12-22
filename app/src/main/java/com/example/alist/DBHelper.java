@@ -37,7 +37,7 @@ class DBHelper extends SQLiteOpenHelper {
     void initDB(SQLiteDatabase SqlDB){
         SqlDB.execSQL(
                 "create table tasks ("
-                        + "id integer primary key,"
+                        + "id integer primary key not null,"
                         + "state integer not null default 1,"                       //1 - Complete, 2 - Fail, 3 - Hold
                         + "name text not null default 'Задача',"
                         + "start_datetime text not null default '2020-01-01 00:00:00',"
@@ -64,7 +64,7 @@ class DBHelper extends SQLiteOpenHelper {
                         +"'Описание подзадачи по умолчанию');");*/
         SqlDB.execSQL(
                 "create table dates ("
-                        + "id integer primary key,"
+                        + "id integer primary key not null,"
                         + "date text unique not null default '2020-01-01',"
                         + "consumed_water_ml integer not null default 0,"
                         + "consumed_kcals integer not null default 0,"

@@ -1,5 +1,7 @@
 package com.example.alist;
 
+import android.content.Context;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -220,5 +222,8 @@ public
     void editInDB(){
         DBHelper dbH=DBHelper.getInstance();
         dbH.editATaskInDatabase(dbH.getWritableDatabase(), this);
+    }
+    static void initDBHelper(Context context){
+        DBHelper.setInstance(context);
     }
 }
